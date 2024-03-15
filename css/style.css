@@ -1,0 +1,119 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* css reset/apply code to everything */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto";
+}
+
+/* body */
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* p text */
+
+.page-1-p {
+    font-size: 2em;
+    padding-bottom: 100px;
+    font-weight: 600;
+}
+
+
+/* page 1 container */
+
+.page-1-container {
+    max-width: 50%;
+    width: 50%;
+    height: 350px;
+    background-color: white;    
+    box-shadow: 7px 7px 15px rgb(183, 176, 176),  -5px 0px 15px rgb(183, 176, 176);
+    border-radius: 5px;
+
+}
+
+/* login txt style */
+
+.login-txt {
+    position: relative;
+    top: 30px;
+    left: 53px;
+    font-size: 1.6em;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+
+/* using form for align inputs in column direction */
+
+form {
+    display: flex;
+    flex-direction: column;
+    /* using gap instead of margin, gap is better for responsive */
+    gap: 50px;
+    padding: 50px;
+}
+
+
+/* inputs */
+
+#email-input,
+#password-input, 
+#button-input {
+    max-width: 99%;
+    width: 99%;
+    height: 30px;
+    border: 2px solid lightgrey;
+    padding: 20px;
+    outline: none;
+
+}
+
+/* separate btn style */
+
+#button-input {
+    max-width: 100px;
+    background: #188853;
+    padding: 0;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+#button-input:hover {
+    max-width: 150px;
+    width: 150px;
+    letter-spacing: 3px;
+    cursor: pointer;    
+
+}
+
+/* placeholder style */
+
+::placeholder {
+    color: rgb(165, 157, 157);
+}
+
+
+/* Responsive */
+
+@media only screen and (max-width: 490px) {
+    .page-1-p {
+        max-width: 300px;
+        position: relative;
+        left: 20px;
+        top: 30px;
+    }
+}
